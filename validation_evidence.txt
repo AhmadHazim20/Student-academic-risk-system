@@ -1,3 +1,0 @@
-PASS: all required artifacts meet the minimum completeness checks
-
-Return code: 0
