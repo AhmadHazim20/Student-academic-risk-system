@@ -6,10 +6,12 @@ This data dictionary describes the fields used in the Synthetic Student Academic
 
 The purpose of the dataset is to support controlled data ingestion, preprocessing, automated quality validation and risk classification testing.
 
-**Schema Version:** 1.0.0  
-**Dataset Type:** Synthetic  
-**Primary Key:** `student_id`  
-**Target Variable:** `risk_label`
+| **Item**            | **Description** |
+| ------------------- | --------------- |
+| **Schema Version**  | 1.0.0           |
+| **Dataset Type**    | Synthetic       |
+| **Primary Key**     | `student_id`    |
+| **Target Variable** | `risk_label`    |
 
 ## 2. Field Definitions
 
