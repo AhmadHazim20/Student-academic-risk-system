@@ -1,0 +1,24 @@
+{
+  "release_id": "student-academic-risk-1.0.0",
+  "schema_version": "1.0.0",
+  "source_identifier": "data/raw/synthetic_dataset.csv",
+  "source_sha256": "ac46bc9e0a9375e87afbe2665b841db47de03532756e5be6fc27e2f59c8c4546",
+  "steps": [
+    {
+      "step": 1,
+      "script": "src/ingest.py",
+      "action": "Validate and standardize raw values",
+      "output": "data/staging/validated_input.csv"
+    },
+    {
+      "step": 2,
+      "script": "src/preprocess.py",
+      "action": "Sort rows and calculate performance_change",
+      "output": "data/processed/controlled_dataset.csv"
+    }
+  ],
+  "execution_note": "src/build_releases.py stages the selected source as synthetic_dataset.csv in an isolated workspace.",
+  "processed_sha256": "8b5d22d0768c9f1acd6586aa71ed8fdb9654c4391c07aaa4409eb9f25a612502",
+  "code_commit": "6fb4cdb32199a1f077ceb7bb78735793a5a95380",
+  "created_at_utc": "2026-11-17T04:32:25.808830+00:00"
+}
