@@ -1,0 +1,98 @@
+
+{
+  "contract_id": "student-academic-risk-data-contract",
+  "schema_version": "1.0.0",
+  "contract_version": "1.0.0",
+  "dataset_name": "Synthetic Student Academic Risk Dataset",
+  "description": "Data contract for the AI-Assisted Student Academic Performance Risk Identification System.",
+  "source_type": "synthetic",
+  "record_granularity": "one simulated student per academic reporting period",
+  "primary_key": ["student_id"],
+  "additional_columns_allowed": false,
+  "fields": [
+    {
+      "name": "student_id",
+      "type": "string",
+      "nullable": false,
+      "unique": true,
+      "pattern": "^STU[0-9]{3,}$",
+      "description": "Unique synthetic student identifier.",
+      "sensitive": false
+    },
+    {
+      "name": "attendance_rate",
+      "type": "float",
+      "nullable": false,
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Attendance percentage.",
+      "sensitive": false
+    },
+    {
+      "name": "assessment_average",
+      "type": "float",
+      "nullable": false,
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Current average academic assessment score.",
+      "sensitive": false
+    },
+    {
+      "name": "assignment_completion_rate",
+      "type": "float",
+      "nullable": false,
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Percentage of assignments completed.",
+      "sensitive": false
+    },
+    {
+      "name": "previous_average",
+      "type": "float",
+      "nullable": false,
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Previous academic performance average.",
+      "sensitive": false
+    },
+    {
+      "name": "missing_assignments",
+      "type": "integer",
+      "nullable": false,
+      "minimum": 0,
+      "maximum": 20,
+      "description": "Number of missing assignments.",
+      "sensitive": false
+    },
+    {
+      "name": "risk_label",
+      "type": "string",
+      "nullable": false,
+      "allowed_values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Synthetic academic risk category.",
+      "sensitive": false
+    }
+  ],
+  "validation_policy": {
+    "missing_required_field": "reject_dataset",
+    "unexpected_field": "reject_dataset",
+    "invalid_type": "reject_dataset",
+    "out_of_range_value": "reject_dataset",
+    "duplicate_primary_key": "reject_dataset",
+    "invalid_risk_label": "reject_dataset",
+    "empty_dataset": "reject_dataset",
+    "invalid_label_rule": "reject_dataset",
+    "personal_information_detected": "quarantine_and_require_review"
+  },
+  "change_control": {
+    "approval_required": true,
+    "proposed_change_document": "docs/change_record.md",
+    "reviewer": "Project Data Steward",
+    "breaking_change_rule": "major_schema_version_increment_and_review",
+    "non_breaking_change_rule": "document_and_approve_before_release"
+  }
+}
