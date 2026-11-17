@@ -1,0 +1,24 @@
+COMMAND: python -m unittest discover -s tests -p test_data_quality.py -v
+RETURN CODE: 0
+
+STDOUT:
+
+Class distribution: {'Low': 40, 'Medium': 40, 'High': 40}
+
+CONTROLLED FAILURE: Invalid attendance 120 rejected successfully.
+
+STDERR:
+test_01_schema (test_data_quality.TestDataQuality.test_01_schema) ... ok
+test_02_completeness (test_data_quality.TestDataQuality.test_02_completeness) ... ok
+test_03_uniqueness (test_data_quality.TestDataQuality.test_03_uniqueness) ... ok
+test_04_validity (test_data_quality.TestDataQuality.test_04_validity) ... ok
+test_05_class_distribution (test_data_quality.TestDataQuality.test_05_class_distribution) ... ok
+test_06_domain_label_rule (test_data_quality.TestDataQuality.test_06_domain_label_rule) ... ok
+test_07_privacy_rule (test_data_quality.TestDataQuality.test_07_privacy_rule) ... ok
+test_08_processed_consistency (test_data_quality.TestDataQuality.test_08_processed_consistency) ... ok
+test_09_controlled_failure (test_data_quality.TestDataQuality.test_09_controlled_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.058s
+
+OK
