@@ -83,12 +83,14 @@ The dataset cannot demonstrate actual student behaviour, institutional differenc
 
 ## 1.9 Relationship to Assignment 1 Requirements
 
-| Requirement ID | Assignment 1 Requirement | Relationship to Assignment 2 |
+
+| Assignment 1 ID | Requirement | DataOps Relationship |
 |---|---|---|
-| RQ-01 | Classify students according to academic risk levels | The dataset provides validated academic indicators and a reference risk label |
-| RQ-03 | Provide supporting evidence for predictions | Academic indicators are retained in the processed dataset |
-| RQ-05 | Restrict access to authorised users | Synthetic records are used for the public repository; real academic data would require access controls |
-| RQ-06 | Record decisions and relevant model information for auditing | Dataset releases, transformations and changes will be recorded through manifests and lineage metadata |
+| AC-01 | Display recommended student risk categories | Dataset contains Low, Medium and High reference labels |
+| AC-02 | Display academic indicators supporting recommendations | Processed dataset retains relevant academic indicators |
+| AC-04 | Reject or review invalid academic data | Ingestion rejects invalid values and controlled failure is tested |
+| AC-05 | Restrict access to authorised users | Synthetic publication limits exposure; real access control remains future work |
+| AC-09 | Record recommendation overrides | Dataset change history supports data accountability but does not implement override logging |
 
 ## 1.10 Relationship to Assignment 1 Risks
 
