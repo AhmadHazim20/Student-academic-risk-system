@@ -2,19 +2,15 @@
 
 ## 1. Dataset Overview
 
-**Project:** AI-Assisted Student Academic Performance Risk Identification System
-
-**Dataset Type:** Synthetic academic records
-
-**Schema Version:** 1.0.0
-
-**Baseline Release:** 1.0.0 — 120 records
-
-**Updated Release:** 1.1.0 — 123 records
-
-**Data Owner:** Student researcher for this academic prototype
-
-**Purpose:** To support controlled ingestion, preprocessing, data quality testing, versioning and governance for an AI-assisted academic risk identification system.
+| **Item**             | **Description**                                                                                                                                         |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Project**          | AI-Assisted Student Academic Performance Risk Identification System                                                                                     |
+| **Dataset Type**     | Synthetic academic records                                                                                                                              |
+| **Schema Version**   | 1.0.0                                                                                                                                                   |
+| **Baseline Release** | 1.0.0 — 120 records                                                                                                                                     |
+| **Updated Release**  | 1.1.0 — 123 records                                                                                                                                     |
+| **Data Owner**       | Student researcher for this academic prototype                                                                                                          |
+| **Purpose**          | To support controlled ingestion, preprocessing, data quality testing, versioning and governance for an AI-assisted academic risk identification system. |
 
 ## 2. Data Source and Collection
 
@@ -36,7 +32,9 @@ The raw dataset contains seven fields:
 - missing_assignments
 - risk_label
 
-The processed dataset includes one additional derived field, performance_change.
+The processed dataset includes one additional derived field which is:
+
+- performance_change
 
 ## 4. Dataset Distribution
 
@@ -123,7 +121,7 @@ For real student records, retention periods, storage security, access permission
 
 Dataset changes must be documented in docs/change_record.md.
 
-The reviewer must inspect schema compatibility, data quality results, privacy risks, lineage and reproducibility before approving a release.
+The schema compatibility, data quality results, privacy risks, lineage and reproducibility must be inspect before approving a release.
 
 Breaking or ethically unacceptable changes must be rejected or quarantined pending further review.
 
