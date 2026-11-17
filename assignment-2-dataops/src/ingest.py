@@ -7,7 +7,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 
-RAW = ROOT / "data/raw/sample_input.csv"
+RAW = ROOT / "data/raw/synthetic_dataset.csv"
 CONTRACT = ROOT / "metadata/data_contract.json"
 STAGING = ROOT / "data/staging/validated_input.csv"
 
