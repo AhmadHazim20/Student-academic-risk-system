@@ -49,25 +49,26 @@ Review evidence must include:
 - Reproducibility verification.
 - Confirmation that baseline data remains unchanged.
 
+
 ### 1.4 Review Decision
 
-**Decision:** [Approved / Rejected / Changes Required]
+**Decision:** Approved for synthetic prototype testing.
 
-**Justification:** [Enter actual reviewer findings]
+**Reviewer:** Student researcher (self-review).
 
-**Approval Scope:** Synthetic academic prototype only.
+**Justification:** The dataset update was accepted because the three additional student records follow the existing data contract without changing the schema. The updated dataset passed all nine automated data quality tests, and the GitHub Actions workflow completed successfully. No real student information was added.
 
-The change may be approved after the reviewer confirms the validation results and governance requirements.
+**Approval Scope:** This approval only applies to the synthetic dataset used for academic testing. It does not permit the use of actual student records or real academic decision-making.
 
 ---
 
 ## 2. Change Request DCR-002 — Unacceptable Change
 
-**Proposed Change:** Introduce a new email field containing real student email addresses in the publicly shared dataset.
-
-**Change Type:** Breaking and ethically unacceptable
-
-**Status:** Rejected in the proposed design review; not implemented.
+| **Item**            | **Description**                                                                                     |
+| ------------------- | --------------------------------------------------------------------------------------------------- |
+| **Proposed Change** | Introduce a new email field containing real student email addresses in the publicly shared dataset. |
+| **Change Type**     | Breaking and ethically unacceptable                                                                 |
+| **Status**          | Rejected in the proposed design review; not implemented.                                            |
 
 ### 2.1 Technical Impact
 
@@ -101,8 +102,9 @@ A future request to process real student information would require an approved i
 
 ## 3. Traceability
 
-DCR-001 relates to AC-02, AC-04 and risks R1, R5 and R7 from Assignment 1.
+| **Change Request ID** | **Related Acceptance Criteria** | **Related Risks** | **Reference** |
+| --------------------- | ------------------------------- | ----------------- | ------------- |
+| DCR-001               | AC-02, AC-04                    | R1, R5, R7        | Assignment 1  |
+| DCR-002               | AC-04, AC-05                    | R4                | Assignment 1  |
 
-DCR-002 relates to AC-04, AC-05 and risk R4.
-
-Detailed traceability is maintained in docs/traceability.csv.
+Detailed traceability is maintained in `docs/traceability.csv`.
