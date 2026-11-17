@@ -2,23 +2,17 @@
 
 ## 1. Change Request DCR-001
 
-**Project:** AI-Assisted Student Academic Performance Risk Identification System
-
-**Baseline Release:** 1.0.0
-
-**Updated Release:** 1.1.0
-
-**Schema Version:** 1.0.0
-
-**Change Type:** Schema-compatible dataset update
-
-**Change Owner:** Student Researcher
-
-**Reviewer:** Student Researcher acting as Prototype Data Steward
-
-**Review Date:** [Enter actual date]
-
-**Approval Status:** Pending manual review
+| **Item**             | **Description**                                                     |
+| -------------------- | ------------------------------------------------------------------- |
+| **Project**          | AI-Assisted Student Academic Performance Risk Identification System |
+| **Baseline Release** | 1.0.0                                                               |
+| **Updated Release**  | 1.1.0                                                               |
+| **Schema Version**   | 1.0.0                                                               |
+| **Change Type**      | Schema-compatible dataset update                                    |
+| **Change Owner**     | Student Researcher                                                  |
+| **Reviewer**         | Student Researcher acting as Prototype Data Steward                 |
+| **Review Date**      | 17 November 2026                                                    |
+| **Approval Status**  | Pending manual review                                               |
 
 ### 1.1 Description
 
