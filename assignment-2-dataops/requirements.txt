@@ -1,0 +1,7 @@
+
+# Assignment 2 DataOps Engineering
+# Python version: 3.12
+# Ingestion, preprocessing, release generation,
+# and automated quality tests use only
+# Python standard-library modules.
+# No third-party packages are required.
