@@ -1,0 +1,14 @@
+
+Trace_ID,Assignment1_ID,DataOps_Control,Related_Artifact,Verification,Related_Release,Status
+TR-01,AC-01,Risk categories,data/raw/synthetic_dataset.csv,test_05_class_distribution,1.0.0 and 1.1.0,Data foundation only
+TR-02,AC-02,Academic indicators,data/processed/controlled_dataset.csv,test_08_processed_consistency,1.0.0,Supported by dataset
+TR-03,AC-04,Reject invalid data,metadata/data_contract.json,test_04_validity and test_09_controlled_failure,Both,Verified
+TR-04,AC-05,Protect student data,docs/data_card.md,test_07_privacy_rule,Both,Partial - real access control not implemented
+TR-05,AC-09,Decision accountability,docs/change_record.md,Dataset change audit,Both,Dataset governance only
+TR-06,R1,Prevent incorrect data,src/ingest.py,test_01_schema and test_04_validity,Both,Verified
+TR-07,R2,Monitor high-risk representation,metadata/dataset_manifest.json,test_05_class_distribution,1.1.0,Class distribution only - recall not measured
+TR-08,R4,Data minimisation,docs/data_card.md,test_07_privacy_rule,Both,Partial - schema screening only
+TR-09,R5,Record data distribution,metadata/dataset_manifest.json,Release comparison,1.0.0 and 1.1.0,Versioned data available
+TR-10,R7,Trace dataset transformations,metadata/lineage.json,Checksum and CI verification,1.1.0,Dataset lineage verified
+TR-11,DCR-001,Compatible dataset change,docs/change_record.md,Nine tests and reproducibility,1.0.0 to 1.1.0,Approval recorded separately
+TR-12,DCR-002,Reject unacceptable change,metadata/data_contract.json,Expected schema and privacy rejection,Not released,Proposed change rejected
