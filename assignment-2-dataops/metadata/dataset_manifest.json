@@ -1,0 +1,25 @@
+{
+  "release_id": "student-academic-risk-1.1.0",
+  "release_version": "1.1.0",
+  "schema_version": "1.0.0",
+  "contract_version": "1.0.0",
+  "source_identifier": "data/raw/synthetic_dataset_v1.1.0.csv",
+  "source_sha256": "5d4e32a562e72c35d7c0fea4f4246498a096866674d5f78dbffa00f63bf9cd0d",
+  "processed_identifier": "data/processed/controlled_dataset_v1.1.0.csv",
+  "processed_sha256": "0264aea4bbdf0c6727b77f684b5a76f0bb5402bc0f79177eb1b05630e0779fe9",
+  "row_count": 123,
+  "class_distribution": {
+    "Low": 41,
+    "Medium": 41,
+    "High": 41
+  },
+  "code_commit": "6fb4cdb32199a1f077ceb7bb78735793a5a95380",
+  "parameters": {
+    "original_generation_seed": 42,
+    "risk_rule_version": "1.0.0",
+    "transformation": "validated ingestion and performance_change"
+  },
+  "change_description": "Added three validated synthetic student records.",
+  "created_at_utc": "2026-11-17T04:32:25.811582+00:00",
+  "approval_record": "docs/change_record.md"
+}
