@@ -65,7 +65,7 @@ The label supports pipeline testing and is not an independently validated indica
 - Assessment average below 50%.
 - Three or more missing assignments.
 
-**Medium Risk** is assigned when no High Risk condition is met and at least one of the following applies:
+**Medium Risk** is given if none of the High Risk conditions are present and one or more of the following are present:
 
 - Attendance rate below 85%.
 - Assessment average below 65%.
@@ -73,50 +73,52 @@ The label supports pipeline testing and is not an independently validated indica
 - At least one missing assignment.
 - Assessment average is at least 10 percentage points below the previous average.
 
-**Low Risk** is assigned when neither High Risk nor Medium Risk conditions are met.
+**Low Risk** is assigned when there are neither High Risk nor Medium Risk conditions.
 
-High Risk takes priority over Medium Risk.
+High Risk is more important than Medium Risk.
 
-These thresholds are project-specific assumptions for reproducible synthetic data testing, not institutional academic policies.
+These thresholds are not academic policies, but assumptions that can be used to test reproducible synthetic data for these projects.
 
 ## 5. Data Quality Constraints
 
-All seven fields are mandatory. Null values, duplicate student identifiers, unexpected columns, malformed values and values outside the specified ranges are prohibited.
+All Seven fields are required. All nulls, duplicate student identifier, unexpected columns, malformed values and values outside the specified range are disallowed.
 
-The recorded `risk_label` must match the documented classification rule for the student's academic indicators.
+The 'risk_label' recorded should correspond to the documentation of the classification rule for the student's academic indicators.
 
-The raw source must remain unchanged during processing. Invalid datasets must not be released as validated processed data.
+Processing the raw source shall not alter its content. Processed data with invalid datasets should not be released as validated data.
 
 ## 6. Sensitive Data Classification
 
-All fields in the submitted dataset describe simulated records and are therefore classified as non-personal synthetic data.
+All the fields indicated in the submitted data set represent synthetic (simulated) data and are considered non-personal.
 
-However, student identifiers, attendance records and academic performance information would be sensitive in a real institutional environment.
+In the real institutional environment, however, student identifiers, attendance records and academic performance information would be sensitive.
 
-If the prototype were adapted to real data, appropriate consent or other lawful authority, access restrictions, retention policies and institutional approval would be required.
+When applied to real data, there would be access restrictions, retention policies and institutional approval, and the prototype would require appropriate consent or other lawful authorization.
 
 ## 7. Data Ownership and Governance
 
-The project researcher is responsible for the synthetic dataset and its technical documentation.
+The project researcher will be responsible for synthetic data and technical documentation.
 
-For a real deployment, the academic institution would need to designate an accountable data owner and data steward.
+In an actual deployment, an academic institution should have a data owner and data steward to whom it can report.
 
-Any modification to the schema, field constraints, label definitions or data generation rules must be reviewed and documented before a new dataset release is approved.
+The changes in the schema, field constraints, label definitions and rules for generating data should be reviewed and recorded before the approval of a new dataset release.
 
 ## 8. Version Control
 
 The baseline schema version is `1.0.0`.
 
-Breaking changes, such as removing a required field or changing its meaning, require a major schema version increment.
+Major schema version increment – changes that will cause problems if you don't upgrade. Breaking changes like the removal of a required field or the change in meaning of a field.
 
-Compatible changes must still be documented, tested and approved before release.
+Document, test, and approve - for release: changes compatible.
 
-Dataset release versions will be recorded separately from schema versions in the dataset manifest.
+Version of the dataset will be recorded separately to schema versions in the dataset manifest for dataset release versions.
 
 ## 9. Limitations
 
-The dataset is synthetic and does not represent actual institutional outcomes.
+The data is hypothetical and not reflective of actual institutional results.
 
-Passing the documented data quality tests does not demonstrate that the risk classification rules are fair, academically appropriate or predictive of real student outcomes.
+Data passing the documented data quality tests does not indicate the fairness, academic appropriateness or predictive value of the risk classification rules.
+
+Data should not be used for actual academic judgements without further checks and institutional control.
 
 The dataset must not be used for real academic decisions without further validation and institutional governance.
